@@ -1,0 +1,225 @@
+$primary: #E89F71;
+$bg-light: #FCF8F3;
+$text-dark: #3A3A3A;
+$text-medium: #616161;
+$white: #FFFFFF;
+
+.header {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  height: 80px;
+  gap: 40px;
+  background-color: $bg-light;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: $text-dark;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex: 1;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $text-dark;
+  cursor: pointer;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: $white;
+  border-radius: 4px;
+  padding: 10px 16px;
+  width: 473px;
+
+  input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: $text-medium;
+    width: 100%;
+    background: transparent;
+
+    &::placeholder {
+      color: $text-medium;
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  .avatar {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.hero {
+  height: 694px;
+  position: relative;
+  display: flex;
+}
+
+.heroLeft {
+  width: 40%;
+  background-color: #F9F1E7;
+  flex-shrink: 0;
+}
+
+.heroRight {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.sofaImage {
+  object-fit: cover;
+}
+
+.heroContent {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(15.5px);
+  padding: 60px;
+  width: 460px;
+  z-index: 2;
+
+  h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: $text-dark;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #898989;
+    line-height: 1.5;
+    margin-bottom: 48px;
+  }
+}
+
+.shopNow {
+  background-color: $primary;
+  color: $white;
+  border: none;
+  padding: 24px 0;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.indicator {
+  position: absolute;
+  top: 20px;
+  left: 55%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  z-index: 3;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.activeDot {
+  width: 27px;
+  height: 27px;
+  background-color: $primary;
+  border-radius: 50%;
+}
+
+.navButtons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.prevBtn,
+.nextBtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 28px;
+  cursor: pointer;
+
+  &:hover {
+    background: $primary;
+    color: $white;
+  }
+}
+
+.infoBox {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(15.5px);
+  padding: 24px;
+  width: 294px;
+  z-index: 3;
+
+  h4 {
+    font-size: 28px;
+    font-weight: 600;
+    color: $text-dark;
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-size: 16px;
+    color: $text-medium;
+    margin-bottom: 16px;
+  }
+}
+
+.infoPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    font-size: 20px;
+    font-weight: 600;
+    color: $text-dark;
+  }
+}
