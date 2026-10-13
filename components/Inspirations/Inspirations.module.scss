@@ -1,0 +1,174 @@
+$primary: #E89F71;
+$bg: #FCF8F3;
+$text-dark: #3A3A3A;
+$text-gray: #616161;
+$white: #FFFFFF;
+
+.inspirations {
+  display: flex;
+  align-items: center;
+  background-color: $bg;
+  padding: 60px 0 60px 100px;
+  overflow: hidden;
+  gap: 60px;
+}
+
+// ===== BÊN TRÁI =====
+.left {
+  min-width: 350px;
+  max-width: 380px;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: $text-dark;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    color: $text-gray;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+}
+
+.exploreBtn {
+  background-color: $primary;
+  color: $white;
+  border: none;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+// ===== BÊN PHẢI =====
+.right {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  position: relative;
+  align-items: flex-start;
+}
+
+// Ảnh lớn
+.mainImage {
+  position: relative;
+  width: 404px;
+  height: 582px;
+  flex-shrink: 0;
+}
+
+// Info box đè lên ảnh lớn
+.infoBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 217px;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(1.5px);
+  padding: 24px 32px;
+}
+
+.infoLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: $text-gray;
+  margin-bottom: 8px;
+}
+
+.line {
+  width: 27px;
+  height: 1px;
+  background-color: $text-gray;
+  display: inline-block;
+}
+
+.infoBox h4 {
+  font-size: 28px;
+  font-weight: 600;
+  color: $text-dark;
+}
+
+.arrowBtn {
+  position: absolute;
+  bottom: 0;
+  right: -48px;
+  width: 48px;
+  height: 48px;
+  background-color: $primary;
+  color: $white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Ảnh nhỏ bên phải
+.sideImages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sideImage {
+  position: relative;
+  width: 372px;
+  height: 283px;
+  overflow: hidden;
+}
+
+// Dots
+.indicator {
+  position: absolute;
+  bottom: 0;
+  left: 420px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.activeDot {
+  width: 27px;
+  height: 27px;
+  background-color: $primary;
+  border-radius: 50%;
+}
+
+// Nút next
+.nextBtn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: $white;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  &:hover {
+    background: $primary;
+    color: $white;
+  }
+}
