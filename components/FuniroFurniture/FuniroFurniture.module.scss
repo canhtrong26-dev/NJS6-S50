@@ -1,0 +1,49 @@
+$text-dark: #3A3A3A;
+$text-gray: #616161;
+
+.funiroFurniture {
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  padding: 40px 0 24px;
+
+  p {
+    font-size: 20px;
+    font-weight: 600;
+    color: $text-gray;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: $text-dark;
+    line-height: 1.2;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 274px 451px 295px 290px 425px;
+  grid-template-rows: 382px 323px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img1 { grid-column: 1; grid-row: 1; }
+.img2 { grid-column: 2; grid-row: 1; }
+.img3 { grid-column: 3; grid-row: 1; }
+.img4 { grid-column: 4; grid-row: 1; }
+.img5 { grid-column: 5; grid-row: 1 / span 2; }
+.img6 { grid-column: 1; grid-row: 2; }
+.img7 { grid-column: 2; grid-row: 2; }
+.img8 { grid-column: 3; grid-row: 2; }
+.img9 { grid-column: 4; grid-row: 2; }
+
+.imgItem {
+  position: relative;
+  overflow: hidden;
+}
+
