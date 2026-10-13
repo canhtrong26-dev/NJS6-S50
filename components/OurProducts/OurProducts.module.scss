@@ -1,0 +1,160 @@
+$primary: #E89F71;
+$text-dark: #3A3A3A;
+$text-gray: #898989;
+$text-old-price: #B0B0B0;
+$bg-card: #F4F5F7;
+$white: #FFFFFF;
+$label-new: #2EC1AC;
+$label-discount: #E97171;
+
+.ourProducts {
+  padding: 60px 100px;
+  text-align: center;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  color: $text-dark;
+  margin-bottom: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 285px);
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+// ===== CARD =====
+.card {
+  width: 285px;
+  background-color: $bg-card;
+  cursor: pointer;
+
+  &:hover .overlay {
+    opacity: 1;
+  }
+}
+
+.cardImage {
+  position: relative;
+  width: 285px;
+  height: 301px;
+  overflow: hidden;
+}
+
+.label {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: $white;
+  z-index: 2;
+}
+
+.labelNew {
+  background-color: $label-new;
+}
+
+.labelDiscount {
+  background-color: $label-discount;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(58, 58, 58, 0.72);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+.addToCart {
+  background: $white;
+  color: $primary;
+  border: none;
+  padding: 12px 52px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    background: $primary;
+    color: $white;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 48px;
+  color: $white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+// ===== CARD INFO =====
+.cardInfo {
+  padding: 16px;
+  background: $bg-card;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: $text-dark;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 16px;
+    color: $text-gray;
+    margin-bottom: 8px;
+  }
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 600;
+  color: $text-dark;
+}
+
+.oldPrice {
+  font-size: 16px;
+  color: $text-old-price;
+  text-decoration: line-through;
+}
+
+// ===== SHOW MORE =====
+.showMore {
+  background: $white;
+  color: $primary;
+  border: 1px solid $primary;
+  padding: 12px 72px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    background: $primary;
+    color: $white;
+  }
+}
